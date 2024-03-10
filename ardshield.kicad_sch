@@ -1806,6 +1806,164 @@
 				)
 			)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:LED"
 			(pin_numbers hide)
 			(pin_names
@@ -2944,6 +3102,12 @@
 		(uuid "75b3c810-5323-4fe1-bbde-1c42b0df0e02")
 	)
 	(junction
+		(at 247.65 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77900c3a-dcba-4c58-b40f-a34d7df2618c")
+	)
+	(junction
 		(at 158.75 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3285,13 +3449,23 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 38.1) (xy 247.65 53.34)
+			(xy 247.65 38.1) (xy 247.65 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2f9f1f68-cd52-4bb1-b160-3f47adf91927")
+	)
+	(wire
+		(pts
+			(xy 247.65 43.18) (xy 259.08 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b7b63f-2628-4dc7-b2e8-fae099357898")
 	)
 	(wire
 		(pts
@@ -3542,6 +3716,16 @@
 			(type default)
 		)
 		(uuid "6e0c828e-9eb2-4b3c-91f7-82b9b34fd94b")
+	)
+	(wire
+		(pts
+			(xy 259.08 50.8) (xy 259.08 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "715734d9-f2c6-49e9-9d3b-fc88ed256987")
 	)
 	(wire
 		(pts
@@ -3852,6 +4036,16 @@
 			(type default)
 		)
 		(uuid "b80ab913-7e07-432e-9819-4b044b8c8c8b")
+	)
+	(wire
+		(pts
+			(xy 247.65 43.18) (xy 247.65 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b97a4591-3ca6-409a-880a-1c0af6bf7a48")
 	)
 	(wire
 		(pts
@@ -4964,6 +5158,76 @@
 			(project "ardshield"
 				(path "/bbb5f21f-dcbf-4531-a2fe-6f09b6cf6630"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 259.08 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "148c1a84-65e9-42dc-922e-200ece04f406")
+		(property "Reference" "C5"
+			(at 262.89 44.8309 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF"
+			(at 262.89 47.3709 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.0452 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 259.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f03d5bb6-957f-4611-a86a-37d767ba2f89")
+		)
+		(pin "1"
+			(uuid "dee48020-1eef-4497-8190-76aacad76774")
+		)
+		(instances
+			(project "ardshield"
+				(path "/bbb5f21f-dcbf-4531-a2fe-6f09b6cf6630"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6722,6 +6986,72 @@
 			(project "ardshield"
 				(path "/bbb5f21f-dcbf-4531-a2fe-6f09b6cf6630"
 					(reference "#gnd0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 259.08 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a4b75e6-2cf8-4f63-89dc-5d524bd16e41")
+		(property "Reference" "#PWR012"
+			(at 259.08 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 259.08 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c215c851-bfb5-42f5-9417-d92572784b1a")
+		)
+		(instances
+			(project "ardshield"
+				(path "/bbb5f21f-dcbf-4531-a2fe-6f09b6cf6630"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
